@@ -1,0 +1,12 @@
+file = open("yeni sorular.txt","a", encoding="utf-8" )
+b = "|"
+a = input("soruyu giriniz")
+s = input("1. şık")
+y = input("2. şık")
+t = input("3. şık")
+o = input("4. şık")
+k = input("doğru şık")
+
+c =  a + b + s + b + y + b + t + b + o + ","+ k
+file.write(c)
+file.close()
