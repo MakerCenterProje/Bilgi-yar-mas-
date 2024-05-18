@@ -1,0 +1,10 @@
+Ülkemizde 2017 yılında asgari ücret ne kadardı?|1400|1600|1800|2000,1400
+Çanakkale Zaferi’nin dahil olduğu savaş hangisidir?|Çanakkale Savaşı|Kurtuluş Savaşı|Birinci Dünya Savaşı|Sakarya Savaşı,Birinci Dünya Savaşı
+Gregor Samsa karakterinin yer aldığı roman hangisidir?|Sefiller|Dönüşüm|Hayvan Çiftliği|Beyaz Diş,Dönüşüm
+Türkiye’nin sahip olduğu uluslararası telefon kodu nedir?|+81|+1|+34|+90,90
+Hücre yapısında yer alan organelin adı nedir?|Lizozom|Mitokondri|Kloroplast|Koful,Lizozom
+Aspirinin ilk kez çıkış yılı nedir?|1789|1899|1999|2009,1899
+Geminin baş kısmının adı nedir?|iskele|güverte|pruva|Baş,pruva
+İlk defa dünya haritasını kim çizmiştir?|Batlamyus|Heredotos|Piri Reis|Erastosthenes|,Piri Reis
+Turkiyenin baskenti neresidir?|Konya|Istanbul|Ankara|Denizli,Ankara
+Hollanda’nın başkenti nedir?|Amsterdam|Londra|New York|Roma,Amsterdam
