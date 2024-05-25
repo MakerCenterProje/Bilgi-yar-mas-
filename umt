@@ -1,0 +1,50 @@
+import tkinter as tk
+import random
+import time
+
+
+puan = 0
+satr = 0
+y = []
+z =[]
+with open("umt_metinbelgesi4.txt","r+",encoding="utf-8") as file:
+    for i in file:
+        z = i.split("|")
+
+
+root = tk.Tk()
+root.title("_umt")
+
+
+y.append(z[satr])
+y.append(z[satr+1])
+y.append(z[satr+2])
+y.append(z[satr+3])
+y.append(z[satr+4])
+y.append(z[satr+5])
+
+def n():
+    print("basıldı")
+    satr += 5
+
+
+label1 = tk.Label(root,text=puan)
+label0 = tk.Label(root,text=y[0])
+
+button1 = tk.Button(root,text=y[1],command=n)
+button2 = tk.Button(root,text=y[2],command=n)
+button3 = tk.Button(root,text=y[3],command=n)
+button4 = tk.Button(root,text=y[4],command=n)
+
+
+label1.grid(row=0,column=15)
+label0.grid(row=0,column=1)
+
+button1.grid(row=1,column=1)
+button2.grid(row=2,column=1)
+button3.grid(row=3,column=1)
+button4.grid(row=4,column=1)
+
+
+
+root.mainloop()
