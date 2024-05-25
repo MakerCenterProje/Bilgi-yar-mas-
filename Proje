@@ -5,37 +5,39 @@ import time
 
 with open("umt_metinbelgesi4.txt", "r+", encoding="utf-8") as file:
     p = 0
-    s = 1
+    s = 0
     for i in file:
         z = i.split("|")
-
 
 root = tk.Tk()
 root.title("_umt")
 
+
 def n():
     print("pressed")
-    s = s + 1
+    s = s + 5
 
 def n1():
     print("pressed")
-    s = s + 1
+    s = s + 5
 
 def n2():
     print("pressed")
-    s = s + 1
+    s = s + 5
 
 def n3():
     print("pressed")
-    s = s+1
+    s = s + 5
+
 
 label1 = tk.Label(root,text=p)
 label0 = tk.Label(root,text=z[s])
 
-button1 = tk.Button(root,text=z[s*2],command=n)
-button2 = tk.Button(root,text=z[s*3],command=n1)
-button3 = tk.Button(root,text=z[s*4],command=n2)
-button4 = tk.Button(root,text=z[],command=n3)
+button1 = tk.Button(root,text=z[s+1],command=n)
+button2 = tk.Button(root,text=z[s+2],command=n1)
+button3 = tk.Button(root,text=z[s+3],command=n2)
+button4 = tk.Button(root,text=z[s+4],command=n3)
+
 
 label1.grid(row=0,column=15)
 label0.grid(row=0,column=1)
@@ -45,11 +47,7 @@ button2.grid(row=2,column=1)
 button3.grid(row=3,column=1)
 button4.grid(row=4,column=1)
 
-
-
 root.mainloop()
-
-
 
 --------------------------------------------------------------------
 
