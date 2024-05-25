@@ -2,8 +2,23 @@ import tkinter as tk
 import random as rand
 import time
 
+sorular = []
+cevap_a = []
+cevap_b = []
+cevap_c = []
+cevap_d = []
+dogru_cevap = []
+with open("bilgiler.txt","a",encoding="utf-8") as file:
+    for satir in file:
+        liste = satir.split("|")
+        sorular.append(liste[0])
+        cevap_a.append(liste[1])
+        cevap_b.append(liste[2])
+        cevap_c.append(liste[3])
+        cevap_d.append(liste[4])
+        dogru_cevap.append(liste[5])
 
-with open("umt_metinbelgesi4.txt", "r+", encoding="utf-8") as file:
+with open("umt_sorular3.txt", "r+", encoding="utf-8") as file:
     p = 0
     s = 0
     for i in file:
@@ -53,7 +68,7 @@ root.mainloop()
 
 
 
-file = open("yeni sorular.txt","a", encoding="utf-8" )
+file = open("sorular3.txt","a", encoding="utf-8" )
 b = "|"
 a = input("soruyu giriniz")
 s = input("1. şık")
