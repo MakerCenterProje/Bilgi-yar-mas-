@@ -77,6 +77,6 @@ t = input("3. şık")
 o = input("4. şık")
 k = input("doğru şık")
 
-c =  a + b + s + b + y + b + t + b + o + ","+ k
+c =  a + b + s + b + y + b + t + b + o + b + k
 file.write(c)
 file.close()
