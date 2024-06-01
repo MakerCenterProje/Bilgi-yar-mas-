@@ -1,30 +1,30 @@
-Ülkemizde 2017 yılında asgari ücret ne kadardı?|1400|1600|1800|2000|1400
-Çanakkale Zaferi’nin dahil olduğu savaş hangisidir?|Çanakkale Savaşı|Kurtuluş Savaşı|Birinci Dünya Savaşı|Sakarya Savaşı|Birinci Dünya Savaşı
-Gregor Samsa karakterinin yer aldığı roman hangisidir?|Sefiller|Dönüşüm|Hayvan Çiftliği|Beyaz Diş|Dönüşüm
-Türkiye’nin sahip olduğu uluslararası telefon kodu nedir?|+81|+1|+34|+90|+90
-Hücre yapısında yer alan organelin adı nedir?|Lizozom|Mitokondri|Kloroplast|Koful|Lizozom
-Aspirinin ilk kez çıkış yılı nedir?|1789|1899|1999|2009|1899
-Geminin baş kısmının adı nedir?|iskele|güverte|pruva|Baş|pruva
-İlk defa dünya haritasını kim çizmiştir?|Batlamyus|Heredotos|Piri Reis|Erastosthenes|Piri Reis
-Turkiyenin baskenti neresidir?|Konya|Istanbul|Ankara|Denizli|Ankara
-Hollanda’nın başkenti nedir?|Amsterdam|Londra|New York|Roma|Amsterdam
-Fatih Sultan Mehmet’in babası kimdir?|Yıldırım Beyazıt|I Mehmet|II Murat|Orhan Bey|II Murat
-Hangisi periyodik tabloda bulunan bir element değildir?|Hava|Neon|İyot|Gümüş|Hava
-Hangisi bir doğal sayıdır?|Eksi iki|Sıfır|İki buçuk|Karekök On Beş|Sıfır
-Hangisi tarihteki Türk devletlerinden biri değildir?|Hun İmparatorluğu|Bizans Devleti|Osmanlı Devleti|Selçuklu Devleti|Bizans Devleti
-Kıbrıs Barış harekatı hangi tarihte gerçekleşmiştir?|1970|1972|1973|1974|1974
-Hangi ülke Asya kıtasındadır?|Singapur|Peru|Madagaskar|Kanada|Singapur
-Tarihçilerin Kutbu olarak bilinen dünyaca ünlü tarihçi kimdir?|Halil İnalcık|Mehmet Fuat Köprülü|İlber Ortaylı|Kemal Karpat|Halil İnalcık
-Fransız İhtilali kaç yılında gerçekleşmiştir?|1789 1799|1799 1899|1800 1809|1768 1788|1789 1799
-Hangi hayvan memeli değildir?|Yarasa|Yunus|Panda|Penguen|Penguen
-Hangisi kuvvet birimidir?|Pascal|Joule|Kalori|Newton|Newton
-Kuyucaklı Yusuf adlı eser kime aittir?|Sabahattin Ali|Yaşar Kemal|Yusuf Atılgan|Orhan Pamuk|Sabahattin Ali
-Osmanlıda Lale devri hangi padişah döneminde yaşamıştır?|III Ahmet|II Mehmet|IV Murat|III Selim|III Ahmet
-Hangisi Kurtuluş Savaşı sırasında gerçekleşmiştir?|Çanakkale Zaferi|Trablusgarp Zaferi|İnönü Zaferi|Kut'ul Amare Zaferi|İnönü Zaferi
-Osmanlı İmparatorluğu yaklaşık kac asır hüküm sürmüştür?|4|5|6|7|6
-Fas'ın başkenti hangi şehirdir?|Kahire|Rabat|Kazablanka|Roma|Rabat
-İstiklal Marşı hangi yıl yazılmıştır?|1920|1921|1922|1924|1921
-1 metre kaç milimetredir?|10|100|1000|10000|1000
-Hangi sosyal medya platformu daha sonra kurulmuştur?|Twitter|Snapchat|Tinder|Whatsapp|Whatsapp
-Hangi şair İkinci Yeni akımına dahildir?|Sezai Karakoç|Orhan Veli|Can Yücel|Namık Kemal|Sezai Karakoç
-Bir dönem Pelé, Franz Beckenbauer, Carlos Alberto ve Yasin Özdenak ‘ın da oynadığıfutbol takımı hangisidir?|DC United|Los Angeles Galaxy|New York Cosmos|Galatasaray|New York Cosmos
+Ülkemizde 2017 yılında asgari ücret ne kadardı?|1400|1600|1800|2000|A
+Çanakkale Zaferi’nin dahil olduğu savaş hangisidir?|Çanakkale Savaşı|Kurtuluş Savaşı|Birinci Dünya Savaşı|Sakarya Savaşı|C
+Gregor Samsa karakterinin yer aldığı roman hangisidir?|Sefiller|Dönüşüm|Hayvan Çiftliği|Beyaz Diş|B
+Türkiye’nin sahip olduğu uluslararası telefon kodu nedir?|+81|+1|+34|+90|D
+Hücre yapısında yer alan organelin adı nedir?|Lizozom|Mitokondri|Kloroplast|Koful|A
+Aspirinin ilk kez çıkış yılı nedir?|1789|1899|1999|2009|B
+Geminin baş kısmının adı nedir?|iskele|güverte|pruva|Baş|C
+İlk defa dünya haritasını kim çizmiştir?|Batlamyus|Heredotos|Piri Reis|Erastosthenes|C
+Turkiyenin baskenti neresidir?|Konya|Istanbul|Ankara|Denizli|C
+Hollanda’nın başkenti nedir?|Amsterdam|Londra|New York|Roma|A
+Fatih Sultan Mehmet’in babası kimdir?|Yıldırım Beyazıt|I Mehmet|II Murat|Orhan Bey|C
+Hangisi periyodik tabloda bulunan bir element değildir?|Hava|Neon|İyot|Gümüş|A
+Hangisi bir doğal sayıdır?|Eksi iki|Sıfır|İki buçuk|Karekök On Beş|B
+Hangisi tarihteki Türk devletlerinden biri değildir?|Hun İmparatorluğu|Bizans Devleti|Osmanlı Devleti|Selçuklu Devleti|B
+Kıbrıs Barış harekatı hangi tarihte gerçekleşmiştir?|1970|1972|1973|1974|D
+Hangi ülke Asya kıtasındadır?|Singapur|Peru|Madagaskar|Kanada|A
+Tarihçilerin Kutbu olarak bilinen dünyaca ünlü tarihçi kimdir?|Halil İnalcık|Mehmet Fuat Köprülü|İlber Ortaylı|Kemal Karpat|A
+Fransız İhtilali kaç yılında gerçekleşmiştir?|1789 1799|1799 1899|1800 1809|1768 1788|A
+Hangi hayvan memeli değildir?|Yarasa|Yunus|Panda|Penguen|D
+Hangisi kuvvet birimidir?|Pascal|Joule|Kalori|Newton|D
+Kuyucaklı Yusuf adlı eser kime aittir?|Sabahattin Ali|Yaşar Kemal|Yusuf Atılgan|Orhan Pamuk|A
+Osmanlıda Lale devri hangi padişah döneminde yaşamıştır?|III Ahmet|II Mehmet|IV Murat|III Selim|A
+Hangisi Kurtuluş Savaşı sırasında gerçekleşmiştir?|Çanakkale Zaferi|Trablusgarp Zaferi|İnönü Zaferi|Kut'ul Amare Zaferi|C
+Osmanlı İmparatorluğu yaklaşık kac asır hüküm sürmüştür?|4|5|6|7|C
+Fas'ın başkenti hangi şehirdir?|Kahire|Rabat|Kazablanka|Roma|B
+İstiklal Marşı hangi yıl yazılmıştır?|1920|1921|1922|1924|B
+1 metre kaç milimetredir?|10|100|1000|10000|C
+Hangi sosyal medya platformu daha sonra kurulmuştur?|Twitter|Snapchat|Tinder|Whatsapp|D
+Hangi şair İkinci Yeni akımına dahildir?|Sezai Karakoç|Orhan Veli|Can Yücel|Namık Kemal|A
+Bir dönem Pelé, Franz Beckenbauer, Carlos Alberto ve Yasin Özdenak ‘ın da oynadığıfutbol takımı hangisidir?|DC United|Los Angeles Galaxy|New York Cosmos|Galatasaray|C
