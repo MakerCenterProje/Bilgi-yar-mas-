@@ -1,0 +1,190 @@
+import os
+import tkinter as tk
+import random
+import time
+sorular = []
+cevap_a = []
+cevap_b = []
+cevap_c = []
+cevap_d = []
+dogru_cevap=[]
+with open("sorular.txt","r",encoding="utf-8") as file:
+    for satir in file:
+        liste = satir.split("|")
+        if len(liste) >= 6:
+            sorular.append(liste[0])
+            cevap_a.append(liste[1])
+            cevap_b.append(liste[2])
+            cevap_c.append(liste[3])
+            cevap_d.append(liste[4])
+            dogru_cevap.append(liste[5].strip())
+print(sorular)
+print(cevap_a)
+print(cevap_b)
+print(cevap_c)
+print(cevap_d)
+print(dogru_cevap)
+
+window = tk.Tk()
+window.title("ANA MENÜ")
+window.geometry("800x600")
+
+puan = 0
+soru_suresi = 30
+start_time = 0
+cevaplanan_soru_sayisi = 0
+max_soru_sayisi = 30
+
+isim = ""
+
+def isim_al():
+    global isim, isim_entry
+    isim = isim_entry.get()
+    if isim:
+        isim_penceresi.destroy()
+        oyun_baslat()
+    else:
+        isim_label.config(text="Lütfen bir isim giriniz!")
+
+def oyun_baslat():
+    soru_getir()
+
+def soru_getir():
+    global sayi, start_time, cevaplanan_soru_sayisi
+    if cevaplanan_soru_sayisi >= max_soru_sayisi or len(sorular) == 0:
+        oyun_bitti()
+        return
+
+    sonuc_label.config(text="")
+    sayi = random.randint(0, len(sorular) - 1)
+    giris1.delete(0, tk.END)
+    giris2.delete(0, tk.END)
+    giris3.delete(0, tk.END)
+    giris4.delete(0, tk.END)
+    giris5.delete(0, tk.END)
+
+    giris1.insert(0, sorular[sayi])
+    giris2.insert(0, cevap_a[sayi])
+    giris3.insert(0, cevap_b[sayi])
+    giris4.insert(0, cevap_c[sayi])
+    giris5.insert(0, cevap_d[sayi])
+
+    start_time = time.time()  # Zamanlayıcıyı başlat
+    update_timer()  # Zamanlayıcıyı güncellemeye başla
+
+def update_timer():
+    elapsed_time = time.time() - start_time
+    kalan_sure = max(0, soru_suresi - elapsed_time)
+    timer_label.config(text=f"Kalan Süre: {int(kalan_sure)} saniye")
+    puan_label.config(text=f"Puan: {puan}")
+    if kalan_sure > 0:
+        window.after(1000, update_timer)  # 1 saniye sonra tekrar güncelle
+
+def kontrol_et(cevap):
+    global puan, cevaplanan_soru_sayisi
+    elapsed_time = time.time() - start_time
+    if elapsed_time <= soru_suresi:
+        kalan_sure = soru_suresi - elapsed_time
+        if dogru_cevap[sayi] == cevap:
+            puan += int(kalan_sure)  # Kalan süreye göre puan ekle
+            sonuc_label.config(text=f"Doğru! Puan: {puan}")
+        else:
+            sonuc_label.config(text=f"Yanlış. Puan: {puan}")
+    else:
+        sonuc_label.config(text=f"Süre doldu. Puan: {puan}")
+
+    puan_label.config(text=f"Puan: {puan}")
+    cevaplanan_soru_sayisi += 1
+
+    # Sorulan soruyu listelerden kaldır
+    del sorular[sayi]
+    del cevap_a[sayi]
+    del cevap_b[sayi]
+    del cevap_c[sayi]
+    del cevap_d[sayi]
+    del dogru_cevap[sayi]
+
+    if cevaplanan_soru_sayisi < max_soru_sayisi:
+        soru_getir()
+    else:
+        oyun_bitti()
+
+def oyun_bitti():
+    sonuc_label.config(text=f"Oyun bitti! Toplam puan: {puan}")
+    kaydet_skor(isim, puan)
+    göster_skorlar()
+
+def kaydet_skor(isim, puan):
+    with open("skorlar.txt", "a", encoding="utf-8") as file:
+        file.write(f"{isim}|{puan}\n")
+
+def göster_skorlar():
+    skorlar = []
+    if os.path.exists("skorlar.txt"):
+        with open("skorlar.txt", "r", encoding="utf-8") as file:
+            for satir in file:
+                isim, puan = satir.strip().split("|")
+                skorlar.append((isim, int(puan)))
+
+    skorlar = sorted(skorlar, key=lambda x: x[1], reverse=True)[:3]
+
+    skorlar_text = "En İyi 3 Skor:\n"
+    for i, (isim, puan) in enumerate(skorlar, start=1):
+        skorlar_text += f"{i}. {isim} - {puan}\n"
+
+    skorlar_label.config(text=skorlar_text)
+
+# Giriş alanlarını oluştur
+giris1 = tk.Entry(window, width="90", background="purple", foreground="white", font="20px")
+giris2 = tk.Entry(window)
+giris3 = tk.Entry(window)
+giris4 = tk.Entry(window)
+giris5 = tk.Entry(window)
+
+button_a = tk.Button(window, text="A", bg="black", fg="white", command=lambda: kontrol_et("A"))
+button_b = tk.Button(window, text="B", bg="black", fg="white", command=lambda: kontrol_et("B"))
+button_c = tk.Button(window, text="C", bg="black", fg="white", command=lambda: kontrol_et("C"))
+button_d = tk.Button(window, text="D", bg="black", fg="white", command=lambda: kontrol_et("D"))
+sonraki_buton = tk.Button(window, text="Sonraki Soru", command=lambda: soru_getir())
+sonuc_label = tk.Label(window, text="")
+timer_label = tk.Label(window, text=f"Kalan Süre: {soru_suresi} saniye", font=("Arial", 14))
+puan_label = tk.Label(window, text=f"Puan: {puan}", font=("Arial", 14))
+
+# En iyi skorları göstermek için label
+skorlar_label = tk.Label(window, text="", font=("Arial", 14))
+
+# Soru ve cevapları göstermek için gerekli alanları yerleştir
+giris1.grid(row=3, column=0, columnspan=2, sticky="EW")
+giris2.grid(row=4, column=1, sticky="w", pady=10)
+giris3.grid(row=5, column=1, sticky="w", pady=10)
+giris4.grid(row=6, column=1, sticky="w", pady=10)
+giris5.grid(row=7, column=1, sticky="w", pady=10)
+
+button_a.grid(row=4, column=0, sticky="E", pady=10)
+button_b.grid(row=5, column=0, sticky="E", pady=10)
+button_c.grid(row=6, column=0, sticky="E", pady=10)
+button_d.grid(row=7, column=0, sticky="E", pady=10)
+sonraki_buton.grid(row=8, column=0, columnspan=2, pady=10)
+
+sonuc_label.grid(row=9, column=0, columnspan=2)
+timer_label.grid(row=10, column=0, columnspan=2, pady=10)
+puan_label.grid(row=11, column=0, columnspan=2, pady=10)
+skorlar_label.grid(row=12, column=0, columnspan=2, pady=10)
+
+def isim_sor():
+    global isim_entry, isim_label, isim_button, isim_penceresi
+    isim_penceresi = tk.Toplevel(window)
+    isim_penceresi.title("İsim Girişi")
+    isim_penceresi.geometry("300x200")
+
+    isim_label = tk.Label(isim_penceresi, text="Lütfen isminizi giriniz:", font=("Arial", 14))
+    isim_label.pack(pady=10)
+
+    isim_entry = tk.Entry(isim_penceresi)
+    isim_entry.pack(pady=10)
+
+    isim_button = tk.Button(isim_penceresi, text="Başla", command=isim_al)
+    isim_button.pack(pady=10)
+
+isim_sor()
+window.mainloop()
