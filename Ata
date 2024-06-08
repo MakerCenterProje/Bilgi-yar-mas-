@@ -31,7 +31,6 @@ print(dogru_cevap)
 window = tk.Tk()
 window.title("ANA MENÜ")
 window.geometry("800x600")
-
 puan = 0
 soru_suresi = 30
 start_time = 0
