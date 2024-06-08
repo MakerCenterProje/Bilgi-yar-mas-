@@ -43,7 +43,7 @@ def isim_al():
 
     global isim, isim_entry
     isim = isim_entry.get()
-    if isim != "":
+    if isim != "" and isim != " ":
         isim_penceresi.destroy()
         oyun_baslat()
     else:
@@ -51,7 +51,7 @@ def isim_al():
 
 def oyun_baslat():
     soru_getir()
-
+    window.call
 def soru_getir():
     global sayi, start_time, cevaplanan_soru_sayisi
     if cevaplanan_soru_sayisi >= max_soru_sayisi or len(sorular) == 0:
@@ -175,17 +175,6 @@ puan_label.grid(row=11, column=0, columnspan=2, pady=10)
 skorlar_label.grid(row=12, column=0, columnspan=2, pady=10)
 
 file = open("sorular.txt","a", encoding="utf-8" )
-b = "|"
-a = input("soruyu giriniz")
-s = input("1. şık")
-y = input("2. şık")
-t = input("3. şık")
-o = input("4. şık")
-k = input("doğru şık")
-
-c = "\n" + a + b + s + b + y + b + t + b + o + b + k
-file.write(c)
-file.close()
 
 def isim_sor():
     global isim_entry, isim_label, isim_button, isim_penceresi
